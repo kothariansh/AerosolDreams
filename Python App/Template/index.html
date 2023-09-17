@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augmented Reality</title>
+</head>
+<body>
+    <h1>Augmented Reality</h1>
+    <button id="startCamera">Start Camera</button>
+    <div>
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+    <script>
+        const startCameraButton = document.getElementById("startCamera");
+        const cameraFeed = document.getElementById("cameraFeed");
+
+        startCameraButton.addEventListener("click", async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                cameraFeed.srcObject = stream;
+            } catch (error) {
+                console.error("Error accessing camera:", error);
+            }
+        });
+    </script>
+</body>
+</html>
