@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Aerosol Dreams</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Custom button styles */
+    .custom-button {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Adjusted button spacing for aesthetics */
+    .custom-button:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    /* Match button height with map */
+    .custom-button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+    }
+
+    /* Map height and zoom level */
+    #map {
+      height: 400px;
+    }
+
+    /* Custom red arrow icon */
+    .red-arrow-icon {
+      url: "https://maps.google.com/mapfiles/arrow.png";
+      size: new google.maps.Size(32, 32);
+      origin: new google.maps.Point(0, 0);
+      anchor: new google.maps.Point(16, 16);
+    }
+
+    /* Live location container style */
+    .live-location-container {
+      margin-top: 20px;
+    }
+
+    /* Bold text style */
+    .bold-text {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Aerosol Dreams
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html"> Projects </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="do.html"> What we do </a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html"> Login </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+              </ul>
+              <!-- <div class="user_option">
+                <a href="">
+                  <img src="images/user.png" alt="">
+                </a>
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button> -->
+              </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Graffiti</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+</head>
+<body>
+    <h1>Another Page</h1>
+    <h2>Captured Image:</h2>
+    <img id="capturedImage" src="" alt="Captured Image">
+
+    <script>
+        // Retrieve the captured image from localStorage
+        const capturedImage = document.getElementById("capturedImage");
+        const imageDataURL = localStorage.getItem("capturedImage");
+        
+        // Display the captured image
+        if (imageDataURL) {
+            capturedImage.src = imageDataURL;
+        } else {
+            capturedImage.alt = "No image available";
+        }
+    </script>
+</body>
+</html>
